@@ -3,6 +3,7 @@ import React from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Gavel, Briefcase, ScrollText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -10,28 +11,28 @@ const features = [
     title: "Gestión de Documentos",
     description: "Análisis de escrituras hipotecarias y contratos de crédito",
     buttonText: "Comenzar",
-    url: "https://www.youtube.com/",
+    url: "/documentos",
   },
   {
     icon: <ScrollText className="w-12 h-12 text-primary mb-4" />,
     title: "Expedientes",
     description: "Gestión integral de casos legales",
     buttonText: "Gestionar",
-    url: "https://www.youtube.com/",
+    url: "/expedientes",
   },
   {
     icon: <Briefcase className="w-12 h-12 text-primary mb-4" />,
     title: "Entidades",
     description: "Control de entidades prestamistas",
     buttonText: "Administrar",
-    url: "https://www.youtube.com/",
+    url: "/entidades",
   },
   {
     icon: <Gavel className="w-12 h-12 text-primary mb-4" />,
     title: "Base Legal",
     description: "Jurisprudencia y normativa aplicable",
     buttonText: "Consultar",
-    url: "https://www.youtube.com/",
+    url: "/base-legal",
   },
 ];
 
@@ -40,8 +41,8 @@ const FeatureCard = ({ icon, title, description, buttonText, url, delay }) => (
     {icon}
     <h2 className="text-xl font-heading font-semibold mb-2">{title}</h2>
     <p className="text-secondary mb-4">{description}</p>
-    <Button className="w-full bg-primary hover:bg-primary-light" onClick={() => window.open(url, '_blank')}>
-      {buttonText}
+    <Button className="w-full bg-primary hover:bg-primary-light" asChild>
+      <Link to={url}>{buttonText}</Link>
     </Button>
   </Card>
 );
