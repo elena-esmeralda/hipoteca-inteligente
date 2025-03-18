@@ -10,28 +10,28 @@ const features = [
     title: "Gestión de Documentos",
     description: "Análisis de escrituras hipotecarias y contratos de crédito",
     buttonText: "Comenzar",
-    url: "https://www.youtube.com/watch?v=your-document-video-id",
+    url: "https://www.youtube.com/",
   },
   {
     icon: <ScrollText className="w-12 h-12 text-primary mb-4" />,
     title: "Expedientes",
     description: "Gestión integral de casos legales",
     buttonText: "Gestionar",
-    url: "https://www.youtube.com/watch?v=your-cases-video-id",
+    url: "https://www.youtube.com/",
   },
   {
     icon: <Briefcase className="w-12 h-12 text-primary mb-4" />,
     title: "Entidades",
     description: "Control de entidades prestamistas",
     buttonText: "Administrar",
-    url: "https://www.youtube.com/watch?v=your-entities-video-id",
+    url: "https://www.youtube.com/",
   },
   {
     icon: <Gavel className="w-12 h-12 text-primary mb-4" />,
     title: "Base Legal",
     description: "Jurisprudencia y normativa aplicable",
     buttonText: "Consultar",
-    url: "https://www.youtube.com/watch?v=your-legal-video-id",
+    url: "https://www.youtube.com/",
   },
 ];
 
